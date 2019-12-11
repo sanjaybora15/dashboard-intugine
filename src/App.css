@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
+.nav_bar{
+  background: #fff;
+  border-bottom: .1px solid rgb(226, 222, 222);
+  box-shadow: 0 8px 6px -6px rgb(243, 243, 243);
+  font-size: 15px;
+  font-weight: bolder;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav_profile_icon{
+  background: rgb(202, 202, 202);
+  padding: 10px;
+  border-radius: 50%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav_profile_icon img{
+  width:20px;
+  height:20px;
+}
+.my-custom-scrollbar {
+  position: relative;
+  max-height: 500px;
+  overflow: auto;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .table-wrapper-scroll-y {
+  display: block;
   }
-  to {
-    transform: rotate(360deg);
+.table_head{
+  font-size: 11px;
+  font-weight: bold;
+  color: rgb(185, 185, 185);
+}
+.both_row{
+  padding: 10px;
+}
+.col_right{
+  border:1px solid rgb(153, 220, 223);
+  margin:10px 0px 0px 35px ;
+  font-size: 13px;
+  font-family: 'Calibri';
+ 
+}
+.col_left{
+  height:500px !important;
+}
+
+/* timeline style */
+.container{
+  margin:10px 0px 0px 25px ;
+  font-size: 13px;
+  font-family: 'Calibri';
+}
+.container ul {
+  list-style: none;
+  padding: 0px;
+  margin-left: 0px;
+  position: relative;
+}
+.container ul:before{
+  content: '';
+  position: absolute;
+  top:0px;
+  left:0px;
+  width:0px;
+  border:1px dashed rgb(13, 97, 175);
+  height:100%;
+}
+.container ul> span:first-child{
+  background-color: rgb(206, 235, 236);
+  content: '';
+  position: absolute;
+  width:40px;
+  top:-45px;
+  left:-18px;
+  height:40px;
+  border-radius: 50%;
+}
+.scan_box> li:first-child{
+  background: rgb(225, 240, 246) !important;
+}
+
+.container ul> span:last-child{
+  background-color: rgb(206, 235, 236);
+  content: '';
+  position: absolute;
+  width:40px;
+  bottom:-45px;
+  left:-18px;
+  height:40px;
+  border-radius: 50%;
+}
+.top_icon{
+  position: absolute;
+  z-index: 10;
+  left:15px;
+  top:8px
+}
+.bottom_icon{
+  position: absolute;
+  z-index: 10;
+  left:10px;
+  top:5px
+}
+.container ul li{
+  margin:25px 0px 25px 10px;
+  position: relative;
+  /* background: rgb(204, 222, 230);  */
+  padding:5px;
+  color:white;
+  border:1px solid rgb(235, 232, 232);
+  font-size: 13px;
+}
+.container ul li> span{
+  content: '';
+  position: absolute;
+  top:0px;
+  left:-10px;
+  width:0px;
+  height:100%;
+}
+.container ul li> span:before{
+  content: '';
+  position: absolute;
+  width:12px;
+  height:12px;
+  border:1px solid rgb(29, 248, 230);
+  left: -5px;
+  border-radius: 50%; 
+  background: rgb(29, 248, 230);
+}
+.container ul li> span:before{
+  top:8px;
+}
+
+
+/* card section */
+.card-list{
+  max-width:500px;
+  display:flex;
+  justify-content: space-between !important;
+  flex-wrap: wrap;
+  margin: auto;
+  
   }
+  .card{
+  width:18%;
+  padding: 10px;
+  height: 80px;
+  margin: 30px auto;
+  border:none;
+  background: rgb(225, 240, 246);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  color:rgb(31, 126, 235);
+  }
+  .active{
+    width:18%;
+    padding: 10px;
+    height: 80px;
+    margin: 30px auto;
+    background: rgb(31, 126, 235);
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 0px rgba(85, 82, 82, 0.25);
+    cursor: pointer;
+    transition: 0.2s;
+    color:#fff
+    }
+  .card-title{
+  text-align: left;
+  font-size:16px;
+  font-family: sans-serif;
+  }
+  .card-sub-title{
+    text-align: center;
+  font-size:25px;
+  font-family: sans-serif;
+  }
+  .card:hover{
+  box-shadow: 5px 5px 5px 1px rgba(134, 129, 129, 0.25), 
+  -5px -5px 0px 1px rgba(236, 225, 225, 0.22);
+  }
+
+  .scan_title{
+
+  }
+  .scan_time{
+    text-align: right;
+  }
+ .table_row_list{
+   cursor: pointer;
+ }
+ .table_row_list:hover{
+  background: rgb(225, 240, 246);
 }
